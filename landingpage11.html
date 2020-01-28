@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dear Evan Hansen</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to right, #65bbe9, 80%, #1e4e99);
+      margin: 20px 20px 20px 50px;
+      font-family: Montserrat, Arial, Sans Serif;
+    }
+
+    h1 {
+      letter-spacing: -7px;
+      font-weight: 800;
+      font-size: 100px;
+      line-height: 80px;
+      margin: 0;
+    }
+
+    .dear {
+      color: #ffffff;
+    }
+    .evan {
+      color: #1e4e99;
+    }
+    .hansen {
+      color: #000000;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    .reviews {
+      font-weight: 700;
+      margin: 50px 700px 50px 70px;
+      font-size: 20px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+
+    strong {
+      font-size: 25px;
+      line-height: 30px;
+      color: #1e4e99;
+    }
+
+    .synopsis {
+      font-weight: 600;
+      line-height: 30px;
+      font-size: 28px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 70px 0 0 0;
+    }
+
+    .role {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 10px;
+      color: #1e4e99;
+      text-transform: uppercase;
+    }
+
+    .author {
+      font-weight: 700;
+      line-height: 20px;
+      color: #1e4e99;
+      text-transform: uppercase;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 10px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    img {
+      float: right;
+    }
+
+    button {
+      background: #65bbe9;
+      padding: 10px 60px 10px 60px;
+      border: 1px, solid, #65bbe9;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 3px 3px 7px gray;
+      transition: all 150ms ease-in-out;
+      margin: 0 0 0 70px;
+    }
+
+    button:hover {
+      background: #1e4e99;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <img
+      src="https://i.ibb.co/jDVZ5Fz/dearevanhansen-Imgur-removebg-preview-removebg-preview-1.png"
+    />
+    <h1>
+      <div class="dear">
+        DEAR
+      </div>
+      <div class="evan">
+        EVAN
+      </div>
+      <div class="hansen">
+        HANSEN
+      </div>
+    </h1>
+    <h2>
+      TONY AWARD<sup>®</sup>-WINNER BEST MUSICAL
+    </h2>
+
+    <h4 class="reviews">
+      <strong>
+        "Tremendously moving and piercingly intimate."
+      </strong>
+      <br />
+      <em>
+        - The Hollywood Reporter
+      </em>
+      <br />
+      <strong>
+        "One of the most remarkable shows in musical theater history."
+      </strong>
+      <br />
+      <em>
+        - The Washington Post
+      </em>
+    </h4>
+
+    <button>
+      Sign up for exclusive content about Dear Evan Hansen
+    </button>
+
+    <h3 class="synopsis">
+      A letter that was never meant to be seen, a lie that was never meant to be
+      told, a life he never dreamed he could have. Evan Hansen is about to get
+      the thing he’s always wanted: a chance to finally fit in.
+    </h3>
+
+    <hr />
+
+    <p>
+      <span class="role">Book by </span>
+      <span class="author">Steven Levenson</span>
+      <span class="role">Music and Lyrics by </span>
+      <span class="author">Benj Pasek and Justin Paul</span>
+      <span class="role">Orchestrations by </span>
+      <span class="author">Alex Lacamoire</span>
+      <span class="role">Directed by </span>
+      <span class="author">Michael Greif</span>
+      <span class="role">Coreography by </span>
+      <span class="author">Danny Mefford</span>
+      <span class="role">Set Design by </span>
+      <span class="author">David Korins</span>
+      <span class="role">Costume Design by </span>
+      <span class="author">Emily Rebholz</span>
+      <span class="role">Lighting Design by </span>
+      <span class="author">Japhy Weideman</span>
+      <span class="role">Sound Design by </span>
+      <span class="author">Nevin Steinberg</span>
+      <span class="role">Projection Design by </span>
+      <span class="author">Peter Nigrini</span>
+      <span class="role">Musical Direction by </span>
+      <span class="author">Ben Cohn</span>
+      <span class="role">Currently Starring </span>
+      <span class="author"
+        >Andrew Barth Feldman | Ann Sanders | Ivan Hernandez | Gabrielle
+        Carrubba | Alex Boniello | Lisa Brescia | Samantha Williams | Sky
+        Lakota-Lynch</span
+      >
+      <span class="role">Original Broadway Cast</span>
+      <span class="author"
+        >Ben Platt | Rachel Bay Jones | Michael Park | Laura Dreyfuss | Mike
+        Faist | Jennifer Laura Thompson | Kristolyn Lloyd | Will Rolland</span
+      >
+    </p>
+
+    <a href="https://dearevanhansen.com/">dearevanhansen.com/</a>
+
+    <script>
+      function sayThanksForSubscribing() {
+        let firstName = prompt("What's your first name?");
+        let lastName = prompt("What's your last name?");
+        let email = prompt("What is your email address?");
+        let visitorFirstName = document.querySelector(".evan");
+        let visitorLastName = document.querySelector(".hansen");
+        let subscriptionReply = document.querySelector("h2");
+
+        if (email.includes("@") === true) {
+          visitorFirstName.innerHTML = firstName.toUpperCase();
+          visitorLastName.innerHTML = lastName.toUpperCase();
+          subscriptionReply.innerHTML = "Thank you for subscribing. You will be hearing from us soon.".toUpperCase();
+        } else {
+          alert("Sorry, that is not a valid email address.");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", sayThanksForSubscribing);
+    </script>
+  </body>
+</html>
